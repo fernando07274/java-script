@@ -9,7 +9,7 @@ header{
     background-color: rgb(167, 255, 228);
     margin: auto;
     width: 90vw;
-    
+    text-align: center;
 }
 
 main{
@@ -21,11 +21,6 @@ main{
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.253);
 }
 
-h1, h2{
-    padding: 10px;
-    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.178);
-}
-
-p{
+h1, h2, p{
     padding: 10px;
 }
