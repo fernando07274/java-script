@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: rgb(167, 255, 228);
+    margin: auto;
+    width: 90vw;
+    
+}
+
+main{
+    background-image: linear-gradient(to right,rgb(65, 255, 182), rgb(0, 255, 115));
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.253);
+}
+
+h1, h2{
+    padding: 10px;
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.178);
+}
+
+p{
+    padding: 10px;
+}
