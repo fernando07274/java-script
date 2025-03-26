@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right, skyblue, rgb(43, 43, 155));            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>sistema de multas</h1>
+        <p>
+            <label for="txtvel">velocidade:</label>
+            <input type="number" name="txtvel" id="txtvel" placeholder="km/h">
+        </p>
+        <input type="button" value="verificar" onclick="verificar()">
+        <div id="res">
+        </div>
+    </main>
+
+    <script>
+        var txtv = document.getElementById('txtvel')
+        var res = document.getElementById('res')
+        function verificar(){
+            var vel = Number(txtv.value)
+            res.innerHTML = `<p>sua velocidade é de <strong>${vel}km/h</strong></p>`
+            if(vel > 60){
+                var multa = (vel - 60) * 0.5
+                res.innerHTML += `<p>vc foi multado por excesso de velocidade. a multa ficou no valor de R$${multa.toFixed(2)}</p>`
+            }
+            res.innerHTML += `dirija sempre com cuidado`
+        }
+    </script>
+</body>
+</html>
