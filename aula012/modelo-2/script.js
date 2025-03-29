@@ -1,1 +1,0 @@
-window.alert("virando a noite estudando e jogando valorant/r6")
