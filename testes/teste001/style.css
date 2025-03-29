@@ -6,20 +6,39 @@
 }
 
 header{
-    background-color: rgb(167, 255, 228);
-    margin: auto;
     text-align: center;
 }
 
 main{
-    background-image: linear-gradient(to right,rgb(65, 255, 182), rgb(0, 255, 115));
+    background-image: linear-gradient(to right,rgb(105, 253, 196), rgb(0, 255, 115));
     width: 400px;
     height: 400px;
     margin: auto;
     border-radius: 10px;
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.253);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.300)
 }
 
 h1, h2, p{
     padding: 10px;
+    text-align: center;
+}
+
+input{
+    border: none;
+    padding: 7px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.300);
+}
+
+div.resposta{
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.300);
+    margin: auto;
+}
+
+p.esquerda{
+    text-align: left;
 }
