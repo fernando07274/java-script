@@ -30,10 +30,10 @@ div{
     padding: 20px;
 }
 
-div.caixa-resultado{
+div#caixa-resultado{
     background-color: white;
+    height: 55px;
     margin: 20px;
-    padding: 25px;
     text-align: right;
     border-radius: 12px;
     line-height: 100%;
@@ -48,6 +48,7 @@ button{
     border: 1px solid rgba(0, 0, 0, 0.6);
     background-color: gainsboro;
     font-weight: bold;
+    cursor: pointer;
 }
 
 button:hover{
