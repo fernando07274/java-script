@@ -15,7 +15,7 @@ section{
     border-radius: 10px;
     padding: 10px;
     width: 300px;
-    height: 300px;
+    min-height: 300px;
     margin: auto;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.500);
 }
@@ -24,4 +24,22 @@ footer{
     color: white;
     text-align: center;
     font-style: italic;
+}
+
+button{
+    border: 1px solid #8888889c;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(44, 44, 44, 0.089);
+}
+
+button:active{
+    background-color: rgb(226, 226, 226);
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
+    display: none;
+}
+
+select::-webkit-scrollbar{
+    display: none;
 }
