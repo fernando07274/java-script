@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise model</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>number analyzer</h1><!--tittle-->
+    </header>
+    <section>
+        <div>
+            <p>
+                <label for="number">type a number(1 to 100)</label><!--ask to user what number he wants-->
+                <input type="number" name="number" id="number">
+            </p>
+            <p>
+                <input type="button" value="submit" onclick="result()"><!--added a number to list-->
+            </p>
+        </div>
+        <div>
+            <select name="res" id="res" size="8"></select><!--result box-->
+            <p>
+                <input type="button" value="finish" onclick="finish()"><!--finish button-->
+                <div id="boxzinha"></div>
+            </p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; curso em video</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
