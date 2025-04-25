@@ -15,8 +15,7 @@ function result() {
         alert('enter with other number')
     } else{
         let op = document.createElement('option')
-        op.text = `element ${Number(num.value)} is added to list`
-        op.value = `number`
+        op.text = `${Number(num.value)}`
         res.appendChild(op)
         listadenumeros.push(Number(num.value))
     }
@@ -24,12 +23,26 @@ function result() {
 
 function finish() {
     let soma = 0
-    let box = document.createElement('p')
-    for( let c = 0; c > listadenumeros.length; c++){
-        soma += Number(listadenumeros)[c]
+    for(let c = 0; c < listadenumeros.length; c++) {
+        soma += listadenumeros[c]
     }
+    let menornum = Math.min(...listadenumeros)
+    let maiornum = Math.max(...listadenumeros)
+    let media = soma / listadenumeros.length
+    let box0 = document.createElement('p')
+    let box1 = document.createElement('p')
+    let box2 = document.createElement('p')
+    let box3 = document.createElement('p')
+    let box4 = document.createElement('p')
     boxzinha.innerHTML = ``
-    box.textContent = `sua lista tem ${listadenumeros.length} numeros`
-    box.textContent += `the sum of the numbers in your list is ${soma}`
-    boxzinha.appendChild(box)
+    box0.textContent = `your list have ${listadenumeros.length} nnumbers`
+    box1.textContent = `sum of numbers${soma}`
+    box2.textContent = `smallest number:${menornum}`
+    box3.textContent = `greater number:${maiornum}`
+    box4.textContent = `media:${media}`
+    boxzinha.appendChild(box0)
+    boxzinha.appendChild(box1)
+    boxzinha.appendChild(box2)
+    boxzinha.appendChild(box3)
+    boxzinha.appendChild(box4)
 }

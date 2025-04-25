@@ -15,13 +15,11 @@
             <p>
                 <label for="number">type a number(1 to 100)</label><!--ask to user what number he wants-->
                 <input type="number" name="number" id="number">
-            </p>
-            <p>
-                <input type="button" value="submit" onclick="result()"><!--added a number to list-->
+                <input type="button" value="➕" onclick="result()"><!--added a number to list-->
             </p>
         </div>
         <div>
-            <select name="res" id="res" size="8"></select><!--result box-->
+            <select name="res" id="res" size="8"><option disabled selected>elements on your list👇</option></select><!--result box-->
             <p>
                 <input type="button" value="finish" onclick="finish()"><!--finish button-->
                 <div id="boxzinha"></div>

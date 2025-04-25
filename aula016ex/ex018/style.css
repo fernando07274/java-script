@@ -14,7 +14,7 @@ section{
     color: black;
     border-radius: 10px;
     padding: 10px;
-    width: 300px;
+    width: 400px;
     min-height: 300px;
     margin: auto;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.500);
@@ -24,4 +24,30 @@ footer{
     color: white;
     text-align: center;
     font-style: italic;
+}
+
+select{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+select::-webkit-scrollbar{
+    display: none;
+}
+
+input{
+    background-color: white;
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #00000018;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid rgb(192, 192, 192);
+}
+
+input::-webkit-inner-spin-button, input::-webkit-outer-spin-button{
+    display: none;
 }
