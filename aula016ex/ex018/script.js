@@ -6,19 +6,26 @@ let listadenumeros = []
 function result() {
 
     if(num.value.length == 0){
-        alert('you need to enter a number to do this')
+        alert('you need to enter a number to do this') // he didn'type a number
+
     } else if(Number(num.value) > 100) {
-        alert('enter a number less than 100')
+        alert('enter a number less than 100') // number greater than 100
+
     } else if(Number(num.value) == 0) {
-        alert('type a number greater than 0')
-    } else if(listadenumeros.includes(Number(num.value))){
-        alert('enter with other number')
+        alert('type a number greater than 0') //number less than 0
+
+    } else if(listadenumeros.includes(Number(num.value))){ 
+        alert('enter with other number') //number on list
+
     } else{
         let op = document.createElement('option')
         op.text = `${Number(num.value)}`
         res.appendChild(op)
         listadenumeros.push(Number(num.value))
-    }
+
+    }       
+    num.value = ''
+    num.focus()
 }
 
 function finish() {
